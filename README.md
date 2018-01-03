@@ -67,3 +67,6 @@ movie without pressing button B?
 
 * Inspiration from [martinohanlon](https://github.com/martinohanlon/microbit-micropython)
 
+* Deck of cards from (https://stackoverflow.com/questions/41970795/what-is-the-best-way-to-create-a-deck-of-cards)
+
+* Quotes from (https://www.hollywoodreporter.com/lists/best-movie-quotes-hollywoods-top-867142/item/i-will-find-you-i-867115)
