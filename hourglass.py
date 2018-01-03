@@ -1,5 +1,9 @@
 #hourglass
+#Shows a hourglass for a specific time
 from microbit import *
+
+display.scroll('Hourglass', wait = True)
+
 hourglassImages = [
     '99999:99999:99999:99999:99999',
     '00000:99999:99999:99999:99999',
@@ -7,13 +11,13 @@ hourglassImages = [
     '00000:00000:00000:99999:99999',
     '00000:00000:00000:00000:99999',
     '00000:00000:00000:00000:00000']
-t = 15 #in seconds
+
+t = 20 #in seconds
 wholeAnimation = t * 1000 # in ms
 eachrow = wholeAnimation // 5
 blinkrow = eachrow // 20
 while True:
     if button_a.was_pressed():
-        display.show(Image.SAD)
         for i in range(5):
             for _ in range(10):
                 display.show(Image(hourglassImages[i+1]))
@@ -21,4 +25,4 @@ while True:
                 display.show(Image(hourglassImages[i]))
                 sleep(blinkrow)
                 
-        display.clear()
+        display.show(Image.HAPPY)

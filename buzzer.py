@@ -1,5 +1,9 @@
 #buzzer
+#show the fastest of two players
 from microbit import *
+
+display.scroll('Buzzer', wait = True)
+
 while True:
     if button_a.is_pressed():
         display.show('A')

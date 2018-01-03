@@ -1,10 +1,11 @@
+#shotClock
+#A basketball shot clock
+#Button A: Stops timer
+#Button B: Resets timer
 from microbit import *
 
-"""
-A basketball shot clock
-Button A: Stops timer
-Button B: Resets timer
-"""
+display.scroll('Shot Clock')
+
 def getImage(num):
     num2images = {
         0:  '09900:90090:90090:90090:09900',
@@ -40,24 +41,24 @@ def getImage(num):
 
 
 counter = 25
-state = 'normal'
+running = True
 startRunningTime = running_time()
 while(True):
-    if running_time() - startRunningTime > 1000 and state == 'normal':
+    if running_time() - startRunningTime > 1000 and running:
         startRunningTime = running_time()
         if counter > 0:
             counter -= 1
             display.show(getImage(counter))
         else:
             display.show(Image.SAD)
-            state = 'stopped'
+            running = False
     if button_a.was_pressed():
-        if state == 'normal':
-            state = 'stopped'
-        elif state == 'stopped':
-            state = 'normal'
+        if running:
+            running = False
+        else:
+            running = True
             startRunningTime = running_time()
     if button_b.was_pressed():
         counter = 25
-        state = 'normal'
+        running = True
         startRunningTime = running_time()
