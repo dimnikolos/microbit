@@ -7,7 +7,7 @@ Projects that use only a single microbit and nothing else.
 You need a single microbit. And the [Mu Editor](https://codewith.mu/), just hit 
 Flash (except for quotes2.py, see below) and go.
 
-##Projects
+## Projects
 * bingo.py: A random bingo ball appears on the led screen (button A). With button B you can see all
 the balls that have been drawn from the pool.
 
@@ -15,9 +15,9 @@ the balls that have been drawn from the pool.
 
 * counter.py: Counts number of times button A is pressed, microbit remembers even if it is powered off.
 
-* dice.py: Throw two dices.
+* dice.py: Throw two dice (using images).
 
-* die.py: Throw a dice with images.
+* die.py: Throw a die (using images).
 
 * hourglass.py: A hourglass timer.
 
@@ -29,20 +29,21 @@ the balls that have been drawn from the pool.
 movie without pressing button B?
 
 * quotes2.py: Same as the previous one but uses quotes.txt.
-Step 1: Flash the microbit with the code
 
-Step 2:
-```
-ufs put ./quotes.txt
-```
-To put the file on the microbit. If you don't have the ufs command then you have to run
-```
-pip install microfs
-```
-first.
+	Step 1: Flash the microbit with the code.
 
-Step 3:
-Reset your microbit (back button).
+	Step 2:
+	```
+	ufs put ./quotes.txt
+	```
+	To put the file on the microbit. If you don't have the ufs command then you have to run
+	```
+	pip install microfs
+	```
+	first.
+
+	Step 3:
+	Reset your microbit (back button).
 
 * reflex.py: Measures reflexes for button A and button B.
 
