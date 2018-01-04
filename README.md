@@ -25,6 +25,8 @@ the balls that have been drawn from the pool.
 
 * pickaLetter.py: Picks a letter from the alphabet as if it is fastly recited.
 
+* pythagorean.py: A Pythagorean table quiz. Button A asks questions and button B shows correct answer.
+
 * quotes.py: Button A shows a movie quote. Button B shows the title of the movie. Can you find the 
 movie without pressing button B?
 
