@@ -8,29 +8,29 @@ You need a single microbit. And the [Mu Editor](https://codewith.mu/), just hit
 Flash (except for quotes2.py, see below) and go.
 
 ## Projects
-* bingo.py: A random bingo ball appears on the led screen (button A). With button B you can see all
+1. bingo.py: A random bingo ball appears on the led screen (button A). With button B you can see all
 the balls that have been drawn from the pool.
 
-* buzzer.py: Who is faster button A player or button B player?
+2. buzzer.py: Who is faster button A player or button B player?
 
-* counter.py: Counts number of times button A is pressed, microbit remembers even if it is powered off.
+3. counter.py: Counts number of times button A is pressed, microbit remembers even if it is powered off.
 
-* dice.py: Throw two dice (using images).
+4. dice.py: Throw two dice (using images).
 
-* die.py: Throw a die (using images).
+5. die.py: Throw a die (using images).
 
-* hourglass.py: A hourglass timer.
+6. hourglass.py: A hourglass timer.
 
-* pickacard.py: Picks a random card from a deck.
+7. pickacard.py: Picks a random card from a deck.
 
-* pickaLetter.py: Picks a letter from the alphabet as if it is fastly recited.
+8. pickaLetter.py: Picks a letter from the alphabet as if it is fastly recited.
 
-* pythagorean.py: A Pythagorean table quiz. Button A asks questions and button B shows correct answer.
+9. pythagorean.py: A Pythagorean table quiz. Button A asks questions and button B shows correct answer.
 
-* quotes.py: Button A shows a movie quote. Button B shows the title of the movie. Can you find the 
+10. quotes.py: Button A shows a movie quote. Button B shows the title of the movie. Can you find the 
 movie without pressing button B?
 
-* quotes2.py: Same as the previous one but uses quotes.txt.
+11. quotes2.py: Same as the previous one but uses quotes.txt.
 
 	Step 1: Flash the microbit with the code.
 
@@ -47,15 +47,15 @@ movie without pressing button B?
 	Step 3:
 	Reset your microbit (back button).
 
-* reflex.py: Measures reflexes for button A and button B.
+12. reflex.py: Measures reflexes for button A and button B.
 
-* shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
+13. shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
 
-* teetotum.py: A teetotum where six messages appear.
+14. teetotum.py: A teetotum where six messages appear.
 
-* timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
+15. timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
 
-* xmas.py: A christmas tree animation.
+16. xmas.py: A christmas tree animation.
 
 ## Built With
 

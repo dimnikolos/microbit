@@ -1,4 +1,6 @@
 #pythagorean
+#button A asks a multiplication question
+#button B shows the answer
 from microbit import *
 import random
 
