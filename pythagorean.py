@@ -4,6 +4,7 @@
 from microbit import *
 import random
 
+display.scroll('Pythagorean test')
 i = 0
 j = 0
 while True:

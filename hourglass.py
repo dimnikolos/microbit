@@ -2,7 +2,7 @@
 #Shows a hourglass for a specific time
 from microbit import *
 
-#display.scroll('Hourglass', wait = True)
+display.scroll('Hourglass', wait = True)
 
 hourglassImages = [
     '99999:99999:99999:99999:99999',

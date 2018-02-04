@@ -20,4 +20,3 @@ def makeImageFromLeds(arr):
 while(True):
     display.show(Image(makeImageFromLeds([random.randint(0,9) for _ in range(7)])))
     sleep(random.randint(1,4)*500)
-    
