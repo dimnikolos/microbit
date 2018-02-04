@@ -29,3 +29,4 @@ while True:
         dice2 = random.randrange(1,6)
         ar = [getDiceImage(dice1),getDiceImage(dice2)]
         display.show(ar, wait = False, loop = True, clear = True, delay = 600)
+

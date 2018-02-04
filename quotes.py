@@ -35,3 +35,4 @@ while True:
             display.scroll(movies[randomQuote], wait = False)
             movies.pop(randomQuote)
             showedAnswer = True
+

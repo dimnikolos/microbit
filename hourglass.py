@@ -29,3 +29,4 @@ def runTimer(t):
 while True:
     if button_a.was_pressed():
         runTimer(20000)#runTimer for 20 seconds
+

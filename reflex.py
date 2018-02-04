@@ -23,3 +23,4 @@ while True:
             pass
         reflex = running_time() - strt
         display.scroll(str(reflex),wait = True)
+

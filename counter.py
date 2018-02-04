@@ -22,3 +22,4 @@ while True:
         with open('counts.txt','w') as f:
             f.write(str(count))
         display.scroll(str(count),wait = False)
+

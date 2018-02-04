@@ -17,3 +17,4 @@ while True:
         display.show(Image.ALL_CLOCKS, wait=False, loop = True)
     if button_b.is_pressed():
         display.show(letter[((running_time()-strt)//200)%26])
+

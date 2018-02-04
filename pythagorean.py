@@ -15,3 +15,4 @@ while True:
         display.scroll(s, wait = False, loop = True)
     if button_b.was_pressed():
         display.scroll(str(i*j))
+

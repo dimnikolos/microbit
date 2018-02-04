@@ -15,3 +15,4 @@ while True:
         display.clear()
         sleep(500)
         display.scroll(random.choice(msgs), loop = True, wait = False)
+

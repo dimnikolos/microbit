@@ -19,3 +19,4 @@ while True:
             display.scroll(str(randomBall),loop = True, wait = False)
     if button_b.was_pressed():
         display.scroll(','.join([str(b) for b in drawn]), wait = False, loop = True)
+

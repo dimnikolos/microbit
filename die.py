@@ -23,3 +23,4 @@ while True:
         display.clear()
         sleep(500)
         display.show(getDiceImage(random.randint(1,6)))
+

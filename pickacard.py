@@ -34,3 +34,4 @@ while True:
     sleep(500)
     display.show(randomCard.suit)
     sleep(500)
+

@@ -34,4 +34,4 @@ while True:
     if button_b.was_pressed():
         display.scroll(movie[1], wait = False)
         showedAnswer = True
-        
+

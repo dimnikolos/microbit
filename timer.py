@@ -21,4 +21,4 @@ while True:
         display.scroll(','.join(stopped), wait = False)
         stopped = []
         strtTime = 0
-        
+
