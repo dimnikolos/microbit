@@ -21,16 +21,18 @@ the balls that have been drawn from the pool.
 
 6. hourglass.py: A hourglass timer.
 
-7. pickacard.py: Picks a random card from a deck.
+7. land.py: Count land bodies the random micro:bit image.
 
-8. pickaLetter.py: Picks a letter from the alphabet as if it is fastly recited.
+8. pickacard.py: Picks a random card from a deck.
 
-9. pythagorean.py: A Pythagorean table quiz. Button A asks questions and button B shows correct answer.
+9. pickaLetter.py: Picks a letter from the alphabet as if it is fastly recited.
 
-10. quotes.py: Button A shows a movie quote. Button B shows the title of the movie. Can you find the 
+10. pythagorean.py: A Pythagorean table quiz. Button A asks questions and button B shows correct answer.
+
+11. quotes.py: Button A shows a movie quote. Button B shows the title of the movie. Can you find the 
 movie without pressing button B?
 
-11. quotes2.py: Same as the previous one but uses quotes.txt.
+12. quotes2.py: Same as the previous one but uses quotes.txt.
 
 	Step 1: Flash the microbit with the code.
 
@@ -47,15 +49,15 @@ movie without pressing button B?
 	Step 3:
 	Reset your microbit (back button).
 
-12. reflex.py: Measures reflexes for button A and button B.
+13. reflex.py: Measures reflexes for button A and button B.
 
-13. shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
+14. shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
 
-14. teetotum.py: A teetotum where six messages appear.
+15. teetotum.py: A teetotum where six messages appear.
 
-15. timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
+16. timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
 
-16. xmas.py: A christmas tree animation.
+17. xmas.py: A christmas tree animation.
 
 ## Built With
 
