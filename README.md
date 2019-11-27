@@ -51,13 +51,15 @@ movie without pressing button B?
 
 13. reflex.py: Measures reflexes for button A and button B.
 
-14. shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
+14. rockpaperscissors.py: Random rock papers scissors for two players.
 
-15. teetotum.py: A teetotum where six messages appear.
+15. shotClock.py: A basketball shot clock (24 seconds). Button A starts and stops timer, button B resets.
 
-16. timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
+16. teetotum.py: A teetotum where six messages appear.
 
-17. xmas.py: A christmas tree animation.
+17. timer.py: A stopwatch timer. Button A starts/stops timer, button B shows the measures times and resets.
+
+18. xmas.py: A christmas tree animation.
 
 ## Built With
 
