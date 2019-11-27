@@ -15,7 +15,7 @@ while (True):
     while (True):
       if (button_b.was_pressed()):
         break
-    display.show(empty)
+    display.clear()
     sleep(500)
     randomB = randint(0,2)
     display.show(rpsIm[randomB])
@@ -27,3 +27,5 @@ while (True):
     elif (randomA-randomB)%3 == 2:
       display.scroll('B wins')
     sleep(1000)
+    
+    
