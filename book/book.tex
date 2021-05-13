@@ -150,4 +150,74 @@ while True:
 Η εντολή \lstinline{display.show} μπορεί να δείχνει και μια λίστα από εικόνες. Τη λίστα αυτή τη σχηματίζουμε με την εντολή \lstinline{ar = ...} και στη συγκεκριμένη περίπτωση η λίστα περιέχει μόνο δύο εικόνες  (τα δύο ζάρια). Στην εντολή 
 \lstinline{display.show} ορίζoυμε να κάνει επανάληψη μεταξύ των δύο εικόνων \lstinline{loop = True}  και να δείχνει την κάθε μία
 για 0.6 δευτερόλεπτα \lstinline{delay = 600}.
+
+
+\section{Αντανακλαστικά}
+Το πρόγραμμα δείχνει ποιο κουμπί πρέπει να πατήσει οπαίκτης και όταν αυτός το πατήσει εμφανίζει τον χρόνο που πέρασε από τη 
+στιγμή που εμφανίστηκε στην οθόνη το Α ή το Β μέχρι να πατηθεί το κουμπί μετρώντας στην ουσία τα αντανακλαστικά.
+\begin{lstlisting}
+#reflex
+#Displays A or B and
+#the time in which the player presses
+#the corresponding time
+from microbit import *
+import random
+
+display.scroll('Reflex', wait = True)
+
+buttons = ['A','B']
+while True:
+    sleep(random.randint(2000,3000))
+    button = random.choice(buttons)
+    display.show(button)
+    strt = running_time()
+    if button == 'A':
+        while not button_a.is_pressed():
+            pass
+        reflex = running_time() - strt
+        display.scroll(str(reflex),wait = True)
+    elif button == 'B':
+        while not button_b.is_pressed():
+            pass
+        reflex = running_time() - strt
+        display.scroll(str(reflex),wait = True)
+\end{lstlisting}
+Ο χρόνος εκκίνησης αποθηκεύεται με την εντολή \lstinline{strt = running_time()} στην μεταβλητή \lstinline{strt} μόλις ο χρήστης πατήσει
+το κουμπί το πρόγραμμα βγαίνει από την συνεχόμενη επανάληψη:
+\begin{lstlisting}
+while not button_a.is_pressed():
+    pass
+\end{lstlisting}
+και ο χρόνος που διανύθηκε υπολογίζεται με την εντολή \lstinline{reflex=running_time()-strt}. Στη συνέχεια ο χρόνος αυτός εμφανίζεται με την εντολή \lstinline{display.scroll(reflex)}.
+\section{Διάλεξε ένα γράμμα}
+Το πρόγραμμα διαλέγει ένα γράμμα από την αλφαβήτα αλλά το κάνει σαν να τη λέει από μέσα του με έναν ρυθμό που μπορούμε 
+να τον προγραμματίσουμε. Η λογική προκύπτει από την αλφαβήτα που λέμε πριν παίξουμε \emph{όνομα ζώο πράγμα φυτό}.
+\begin{lstlisting}
+#pickaLetter
+#button A starts the alphabet
+#button B stops the alphabet and 
+#shows the chosen letter.
+from microbit import *
+
+display.scroll('Pick a letter')
+
+letter = ['A','B','C','D','E','F','G','H','I','J',
+            'K','L','M','N','O','P','Q','R','S','T',
+            'U','V','W','X','Y','Z']
+while True:
+    if button_a.is_pressed():
+        display.show('A')
+        sleep(1000)
+        strt = running_time()
+        display.show(Image.ALL_CLOCKS, wait=False, loop = True)
+    if button_b.is_pressed():
+        display.show(letter[((running_time()-strt)//200)%26])
+\end{lstlisting}
+Το \lstinline{running_time()-strt} της τελευταίας γραμμής είναι ο χρόνος που διανύθηκε. Αν κάνουμε το ακέραιο μέρος της διαίρεσής του 
+με το 200 έχουμε το πλήθος των γραμμάτων που είπε το πρόγραμμα από μέσα του. Ωστόσο αν το πρόγραμμα ξαναρχίσει από την αρχή
+το πλήθος αυτό θα είναι μεγαλύτερο από 26 που είναι τα γράμματα της αγγλικής αλφαβήτου για αυτό κάνουμε και το υπόλοιπο της 
+διαίρεσης με το 26 και έτσι το γράμμα που αναζητούμε είναι στη θέση \lstinline{((running_time()-strt)//200)%26} του πίνακα 
+\lstinline{letters}.
+
+
 \end{document}
